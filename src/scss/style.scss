@@ -1,0 +1,16 @@
+@import './cdn/fonts.scss';
+@import './null/null.scss';
+@import './variables/variables.scss';
+@import './firstscreen.scss';
+
+
+html {
+  font-family: 'Cardo', serif;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Raleway', 'Montserrat', 'Open Sans', 'Poppins', sans-serif;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}

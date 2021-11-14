@@ -1,0 +1,89 @@
+.firstscreen {
+  padding: 39px 0 120px;
+  background: url('../../img/bg.png');
+  @include bg;
+  min-height: 100vh;
+  position: relative;
+  &::after {
+    @include mask;
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+.header {
+  padding-bottom: 36px;
+  margin-bottom: 130px;
+  border-bottom: 1px solid #babbc5;
+  .header-wrap {
+    @include flex;
+  }
+}
+.header-logo {
+  @include font(2.25rem, 700, 1.31rem);
+  text-transform: uppercase;
+  color: rgb(101, 105, 128);
+  transition: 0.3s ease;
+  &:after {
+    content: 'BOX';
+    display: inline-block;
+    @include font(2.25rem, 400, 1.31rem);
+    text-transform: uppercase;
+    color: $white;
+    margin-left: -5px;
+  }
+  &:hover {
+    color: $white;
+  }
+}
+.header-nav {
+  @include flex;
+  /* align-items: stretch; */
+  align-items: center;
+}
+.nav-list {
+  li {
+    display: inline-block;
+    margin-left: 77px;
+    @include font(13px, 700, 15px);
+    color: $white;
+    text-transform: uppercase;
+    position: relative;
+    &::after {
+      @include nav;
+      transition: 0.4s ease;
+    }
+    &:hover::after {
+      transform: translateY(30px);
+      background-color: $white;
+      width: 100%
+    }
+  }
+}
+.firstscreen-title {
+  @include font(4rem, 900, 4.69rem);
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  margin-bottom: 32px;
+}
+.firstscreen-subtitle {
+  @include font(1.5rem, 400, 1.56rem);
+  text-align: center;
+  color: $white;
+  margin-bottom: 80px;
+}
+.firstscreen-link {
+  max-width: 370px;
+  margin: auto;
+  padding: 31px 0;
+  text-align: center;
+  background-color: $orange;
+  border-radius: 4px;
+  a {
+    @include font(1.5rem, 900, 1.75rem);
+    color: $white;
+    text-transform: uppercase;
+  }
+}

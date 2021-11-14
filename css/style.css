@@ -1,0 +1,198 @@
+@import 'https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Kaushan+Script&family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&family=Poppins&family=Raleway:wght@400;500;700;900&display=swap';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active, a:link {
+  outline: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.firstscreen {
+  padding: 39px 0 120px;
+  background: url("../../img/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+.firstscreen::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 43, 73, 0.8);
+}
+.firstscreen .container {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  padding-bottom: 36px;
+  margin-bottom: 130px;
+  border-bottom: 1px solid #babbc5;
+}
+.header .header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.31rem;
+  text-transform: uppercase;
+  color: #656980;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.header-logo:after {
+  content: "BOX";
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.31rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: -5px;
+}
+.header-logo:hover {
+  color: #fff;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* align-items: stretch; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-left: 77px;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+.nav-list li::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.nav-list li:hover::after {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  background-color: #fff;
+  width: 100%;
+}
+
+.firstscreen-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 4.69rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.firstscreen-subtitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.56rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+.firstscreen-link {
+  max-width: 370px;
+  margin: auto;
+  padding: 31px 0;
+  text-align: center;
+  background-color: #ff4343;
+  border-radius: 4px;
+}
+.firstscreen-link a {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.75rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+html {
+  font-family: "Cardo", serif;
+  font-family: "Kaushan Script", cursive;
+  font-family: "Raleway", "Montserrat", "Open Sans", "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
