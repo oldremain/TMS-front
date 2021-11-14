@@ -1,6 +1,6 @@
 .firstscreen {
   padding: 39px 0 120px;
-  background: url('../../img/bg.png');
+  background: url('../img/bg.png');
   @include bg;
   min-height: 100vh;
   position: relative;
@@ -39,7 +39,6 @@
 }
 .header-nav {
   @include flex;
-  /* align-items: stretch; */
   align-items: center;
 }
 .nav-list {
