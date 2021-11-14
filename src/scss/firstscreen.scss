@@ -32,9 +32,13 @@
     text-transform: uppercase;
     color: $white;
     margin-left: -5px;
+    transition: 0.3s ease;
   }
   &:hover {
     color: $white;
+  }
+  &:hover::after {
+    color: rgba(255, 67, 67, 0.7);
   }
 }
 .header-nav {
@@ -49,14 +53,18 @@
     color: $white;
     text-transform: uppercase;
     position: relative;
+    transition: 0.3s ease;
     &::after {
       @include nav;
       transition: 0.4s ease;
     }
+    &:hover{
+      color: rgba(255, 67, 67, 0.9);
+    }
     &:hover::after {
       transform: translateY(30px);
       background-color: $white;
-      width: 100%
+      width: 100%;
     }
   }
 }
@@ -76,13 +84,21 @@
 .firstscreen-link {
   max-width: 370px;
   margin: auto;
-  padding: 31px 0;
   text-align: center;
   background-color: $orange;
-  border-radius: 4px;
+  border-radius: 25px;
+  transition: 0.4s ease;
+  &:hover > a {
+    color: $orange;
+  }
+  &:hover {
+    background-color: $white;
+  }
   a {
     @include font(1.5rem, 900, 1.75rem);
     color: $white;
     text-transform: uppercase;
+    line-height: 80px;
+    transition: 0.4s ease;
   }
 }

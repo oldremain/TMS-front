@@ -92,9 +92,14 @@ a:hover {
   text-transform: uppercase;
   color: #fff;
   margin-left: -5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .header-logo:hover {
   color: #fff;
+}
+.header-logo:hover::after {
+  color: rgba(255, 67, 67, 0.7);
 }
 
 .header-nav {
@@ -122,6 +127,8 @@ a:hover {
   color: #fff;
   text-transform: uppercase;
   position: relative;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .nav-list li::after {
   content: "";
@@ -135,6 +142,9 @@ a:hover {
   background-color: transparent;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+.nav-list li:hover {
+  color: rgba(255, 67, 67, 0.9);
 }
 .nav-list li:hover::after {
   -webkit-transform: translateY(30px);
@@ -169,10 +179,17 @@ a:hover {
 .firstscreen-link {
   max-width: 370px;
   margin: auto;
-  padding: 31px 0;
   text-align: center;
   background-color: #ff4343;
-  border-radius: 4px;
+  border-radius: 25px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.firstscreen-link:hover > a {
+  color: #ff4343;
+}
+.firstscreen-link:hover {
+  background-color: #fff;
 }
 .firstscreen-link a {
   font-family: "Raleway", sans-serif;
@@ -182,6 +199,58 @@ a:hover {
   line-height: 1.75rem;
   color: #fff;
   text-transform: uppercase;
+  line-height: 80px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.features {
+  padding: 116px 0 40px;
+}
+
+.features-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px 0 0;
+}
+
+.features-card {
+  -ms-flex-preferred-size: 370px;
+      flex-basis: 370px;
+  margin: 0 15px 70px 0;
+}
+.features-card .features-card__icon {
+  text-align: center;
+  font-size: 50px;
+  line-height: 55px;
+  color: #ff4343;
+  margin-bottom: 30px;
+}
+.features-card .features-card__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2d3033;
+  margin-bottom: 25px;
+}
+.features-card .features-card__text {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.313rem;
+  color: #6c7279;
+  text-align: center;
 }
 
 html {

@@ -1,0 +1,30 @@
+.features {
+  padding: 116px 0 40px;
+}
+.features-row {
+  @include flex;
+  margin: 0 -15px 0 0;
+}
+.features-card {
+  flex-basis: 370px;
+  margin: 0 15px 70px 0;
+  .features-card__icon {
+    text-align: center;
+    font-size: 50px;
+    line-height: 55px;
+    color: $orange;
+    margin-bottom: 30px;
+  }
+  .features-card__title {
+    @include font(1.5rem,900,1.75rem);
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: 25px;
+  }
+  .features-card__text {
+    @include font (1.125rem,400,1.313rem);
+    color: $grey;
+    text-align: center;
+  }
+}
