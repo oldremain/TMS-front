@@ -152,6 +152,16 @@ a:hover {
   background-color: #fff;
   width: 100%;
 }
+@media (max-width: 1024px) {
+  .nav-list li {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .nav-list li {
+    display: none;
+  }
+}
 
 .firstscreen-title {
   font-family: "Raleway", sans-serif;
@@ -202,6 +212,38 @@ a:hover {
   line-height: 80px;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+
+.burger--none {
+  display: none;
+}
+@media (max-width: 767px) {
+  .burger--none {
+    display: block;
+    margin-top: -5px;
+  }
+}
+
+.burger {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ada9a9;
+  padding: 3px 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.burger__line {
+  border-top: 2px solid #ada9a9;
 }
 
 .features {
@@ -255,7 +297,6 @@ a:hover {
 
 .work {
   padding: 116px 0;
-  /* min-width: 100vw; */
 }
 
 .work-row {
@@ -273,8 +314,6 @@ a:hover {
 }
 
 .work-card {
-  /* flex: 1 1 378px; */
-  /* margin: 0 2px 2px 0; */
   border: 1px solid #fff;
   position: relative;
 }

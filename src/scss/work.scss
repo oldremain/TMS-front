@@ -1,14 +1,11 @@
 .work {
   padding: 116px 0;
-  /* min-width: 100vw; */
 }
 .work-row {
   @include flex;
   justify-content: center;
 }
 .work-card {
-  /* flex: 1 1 378px; */
-  /* margin: 0 2px 2px 0; */
   border: 1px solid $white;
   position: relative;
   .card-img {
@@ -24,6 +21,7 @@
       }
     }
   }
+  // медиа запросы для ряда картинок
   @media (min-width: 1024px) {
     flex: 0 1 25%;
   }
