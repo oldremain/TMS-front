@@ -37,7 +37,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   position: relative;
 }
 .firstscreen::after {
@@ -52,6 +52,11 @@ a:hover {
 .firstscreen .container {
   position: relative;
   z-index: 1;
+}
+@media (max-width: 1300px) {
+  .firstscreen {
+    min-height: 100vh;
+  }
 }
 
 .header {
@@ -68,6 +73,11 @@ a:hover {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .header {
+    margin-bottom: 80px;
+  }
 }
 
 .header-logo {
@@ -174,6 +184,18 @@ a:hover {
   color: #fff;
   margin-bottom: 32px;
 }
+@media (max-width: 1200px) {
+  .firstscreen-title {
+    font-size: 3rem;
+    line-height: 3.69rem;
+  }
+}
+@media (max-width: 767px) {
+  .firstscreen-title {
+    font-size: 2rem;
+    line-height: 2.69rem;
+  }
+}
 
 .firstscreen-subtitle {
   font-family: "Raleway", sans-serif;
@@ -184,6 +206,12 @@ a:hover {
   text-align: center;
   color: #fff;
   margin-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .firstscreen-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
 }
 
 .firstscreen-link {
@@ -212,6 +240,14 @@ a:hover {
   line-height: 80px;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+@media (max-width: 767px) {
+  .firstscreen-link {
+    max-width: 300px;
+  }
+  .firstscreen-link a {
+    line-height: 70px;
+  }
 }
 
 .burger--none {
@@ -298,6 +334,11 @@ a:hover {
 .work {
   padding: 116px 0;
 }
+@media (min-width: 1250px) {
+  .work {
+    padding: 0 0 90px 0;
+  }
+}
 
 .work-row {
   display: -webkit-box;
@@ -312,10 +353,19 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (min-width: 1250px) {
+  .work-row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 .work-card {
   border: 1px solid #fff;
   position: relative;
+  /* @media (min-width: 1250px) {
+    flex: 0 1 25%;
+  } */
 }
 .work-card .card-img {
   overflow: hidden;
@@ -369,8 +419,8 @@ a:hover {
   height: 100%;
   -webkit-transform: rotateY(90deg);
           transform: rotateY(90deg);
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  -webkit-transform-origin: left;
+          transform-origin: left;
   background-color: rgba(255, 67, 67, 0.8);
   color: #fff;
   display: -webkit-box;

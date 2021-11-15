@@ -1,9 +1,15 @@
 .work {
   padding: 116px 0;
+  @media (min-width: 1250px) {
+    padding: 0 0 90px 0;
+  }
 }
 .work-row {
   @include flex;
   justify-content: center;
+  @media (min-width: 1250px) {
+    flex-wrap: nowrap;
+  }
 }
 .work-card {
   border: 1px solid $white;
@@ -22,6 +28,9 @@
     }
   }
   // медиа запросы для ряда картинок
+  /* @media (min-width: 1250px) {
+    flex: 0 1 25%;
+  } */
   @media (min-width: 1024px) {
     flex: 0 1 25%;
   }

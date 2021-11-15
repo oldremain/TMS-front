@@ -2,7 +2,7 @@
   padding: 39px 0 120px;
   background: url('../img/bg.png');
   @include bg;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   position: relative;
   &::after {
     @include mask;
@@ -11,6 +11,9 @@
     position: relative;
     z-index: 1;
   }
+  @media (max-width:1300px) {
+    min-height: 100vh;
+  }
 }
 .header {
   padding-bottom: 36px;
@@ -18,6 +21,9 @@
   border-bottom: 1px solid #babbc5;
   .header-wrap {
     @include flex;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 80px;
   }
 }
 .header-logo {
@@ -81,12 +87,25 @@
   text-align: center;
   color: $white;
   margin-bottom: 32px;
+  // -----медиа для ЗАГОЛОВКА
+  @media (max-width: 1200px) {
+    font-size: 3rem;
+    line-height: 3.69rem;
+  }
+  @media (max-width: 767px) {
+    font-size: 2rem;
+    line-height: 2.69rem;
+  }
 }
 .firstscreen-subtitle {
   @include font(1.5rem, 400, 1.56rem);
   text-align: center;
   color: $white;
   margin-bottom: 80px;
+  @media (max-width: 767px) {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
 }
 .firstscreen-link {
   max-width: 370px;
@@ -107,6 +126,12 @@
     text-transform: uppercase;
     line-height: 80px;
     transition: 0.4s ease;
+  }
+  @media (max-width: 767px) {
+    max-width: 300px;
+    & a {
+      line-height: 70px;
+    }
   }
 }
 // ----Стили для бургера------
