@@ -1,0 +1,41 @@
+.team {
+  padding: 114px 0;
+}
+.team-row {
+  @include flex;
+}
+.team-card {
+  max-width: 270px;
+  .avatar img {
+    display: block;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px $black;
+  }
+  .name {
+    @include font (24px,700,28px);
+    color: $black;
+    margin-bottom: 6px;
+  }
+  .position {
+    @include font (18px, 400, 21px);
+    color: $orange;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .resume {
+    @include font (18px, 400, 21px);
+    color: $grey;
+    margin-bottom: 38px;
+  }
+  .person-link {
+    @include flex;
+    justify-content: flex-start;
+    li {
+      font-size: 30px;
+      margin-right: 5px;
+      color: $grey;
+      opacity: 0.9;
+    }
+  }
+}
+

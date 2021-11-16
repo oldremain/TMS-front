@@ -1,8 +1,8 @@
 .work {
-  padding: 116px 0;
-  @media (min-width: 1250px) {
+  /* padding: 116px 0; */
+  /* @media (min-width: 1250px) {
     padding: 0 0 90px 0;
-  }
+  } */
 }
 .work-row {
   @include flex;
@@ -25,7 +25,7 @@
     }
   }
   // медиа запросы для ряда картинок
- /*  @media (min-width: 1250px) {
+  /*  @media (min-width: 1250px) {
     flex: 0 1 10%;
   } */
   @media (min-width: 1024px) {
@@ -63,6 +63,17 @@
     text-align: center;
     @media (min-width: 1250px) {
       @include font(0.9rem, 400, 1rem);
+    }
+  }
+  @media (max-width: 468px) {
+    &__title {
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+      margin-bottom: 10px;
+    }
+    &__description {
+      font-size: 0rem;
+      line-height: 1rem;
     }
   }
 }

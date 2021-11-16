@@ -349,7 +349,7 @@ a:hover {
 }
 @media (max-width: 468px) {
   .features {
-    padding: 70px 0 0;
+    padding: 70px 0;
   }
   .features .features-card:last-child {
     margin-bottom: 0;
@@ -428,12 +428,10 @@ a:hover {
 }
 
 .work {
-  padding: 116px 0;
-}
-@media (min-width: 1250px) {
-  .work {
+  /* padding: 116px 0; */
+  /* @media (min-width: 1250px) {
     padding: 0 0 90px 0;
-  }
+  } */
 }
 
 .work-row {
@@ -460,8 +458,8 @@ a:hover {
   border: 1px solid #fff;
   position: relative;
   /*  @media (min-width: 1250px) {
-     flex: 0 1 10%;
-   } */
+    flex: 0 1 10%;
+  } */
 }
 .work-card .card-img {
   overflow: hidden;
@@ -568,6 +566,17 @@ a:hover {
     line-height: 1rem;
   }
 }
+@media (max-width: 468px) {
+  .card-content__title {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .card-content__description {
+    font-size: 0rem;
+    line-height: 1rem;
+  }
+}
 
 .work-card:hover > .card-content {
   -webkit-transform: rotateY(0deg);
@@ -577,6 +586,78 @@ a:hover {
 .work-card:hover > .card-img img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.team {
+  padding: 114px 0;
+}
+
+.team-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team-card {
+  max-width: 270px;
+}
+.team-card .avatar img {
+  display: block;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 0 10px #2d3033;
+          box-shadow: 0 0 10px #2d3033;
+}
+.team-card .name {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  color: #2d3033;
+  margin-bottom: 6px;
+}
+.team-card .position {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ff4343;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.team-card .resume {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #6c7279;
+  margin-bottom: 38px;
+}
+.team-card .person-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.team-card .person-link li {
+  font-size: 30px;
+  margin-right: 5px;
+  color: #6c7279;
+  opacity: 0.9;
 }
 
 html {
