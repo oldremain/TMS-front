@@ -2,7 +2,6 @@
   padding: 39px 0 120px;
   background: url('../img/bg.png');
   @include bg;
-  /* min-height: 100vh; */
   position: relative;
   &::after {
     @include mask;
@@ -131,6 +130,19 @@
     max-width: 300px;
     & a {
       line-height: 70px;
+    }
+  }
+  @media (max-width: 767px) {
+    max-width: 300px;
+    & a {
+      line-height: 70px;
+    }
+  }
+  @media (max-width: 360px) {
+    max-width: 280px;
+    & a {
+      line-height: 60px;
+      font-size: 1.3rem;
     }
   }
 }

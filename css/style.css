@@ -37,7 +37,6 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* min-height: 100vh; */
   position: relative;
 }
 .firstscreen::after {
@@ -249,6 +248,23 @@ a:hover {
     line-height: 70px;
   }
 }
+@media (max-width: 767px) {
+  .firstscreen-link {
+    max-width: 300px;
+  }
+  .firstscreen-link a {
+    line-height: 70px;
+  }
+}
+@media (max-width: 360px) {
+  .firstscreen-link {
+    max-width: 280px;
+  }
+  .firstscreen-link a {
+    line-height: 60px;
+    font-size: 1.3rem;
+  }
+}
 
 .burger--none {
   display: none;
@@ -284,6 +300,60 @@ a:hover {
 
 .features {
   padding: 116px 0 40px;
+}
+@media (max-width: 1200px) {
+  .features {
+    padding-bottom: 0;
+  }
+  .features .container {
+    max-width: 970px;
+  }
+  .features .container .features-row {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media (max-width: 992px) {
+  .features .container {
+    max-width: 750px;
+  }
+  .features .container .features-row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  .features {
+    padding: 100px 0 0;
+  }
+  .features .container {
+    max-width: 90%;
+  }
+  .features .container .features-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .features .container .features-row .features-card {
+    width: 70%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 468px) {
+  .features {
+    padding: 70px 0 0;
+  }
+  .features .features-card:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .features-row {
@@ -330,6 +400,32 @@ a:hover {
   color: #6c7279;
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .features-card .features-card__icon {
+    font-size: 46px;
+  }
+  .features-card .features-card__title {
+    font-size: 1.3rem;
+  }
+  .features-card .features-card__text {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 992px) {
+  .features-card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+  }
+}
+@media (max-width: 468px) {
+  .features-card .features-card__title {
+    font-size: 1.2rem;
+  }
+  .features-card .features-card__text {
+    font-size: 1rem;
+  }
+}
 
 .work {
   padding: 116px 0;
@@ -363,9 +459,9 @@ a:hover {
 .work-card {
   border: 1px solid #fff;
   position: relative;
-  /* @media (min-width: 1250px) {
-    flex: 0 1 25%;
-  } */
+  /*  @media (min-width: 1250px) {
+     flex: 0 1 10%;
+   } */
 }
 .work-card .card-img {
   overflow: hidden;
@@ -378,10 +474,6 @@ a:hover {
   height: 100%;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-}
-.work-card .card-img img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 @media (min-width: 1024px) {
   .work-card {
@@ -446,7 +538,18 @@ a:hover {
   font-weight: 900;
   line-height: 1.75rem;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 35px;
+}
+@media (min-width: 1250px) {
+  .card-content__title {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.1rem;
+    margin-bottom: 10px;
+  }
 }
 .card-content__description {
   font-family: "Raleway", sans-serif;
@@ -454,11 +557,26 @@ a:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 1.313rem;
+  text-align: center;
+}
+@media (min-width: 1250px) {
+  .card-content__description {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem;
+  }
 }
 
-.card-img:hover + .card-content {
+.work-card:hover > .card-content {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+}
+
+.work-card:hover > .card-img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 html {
