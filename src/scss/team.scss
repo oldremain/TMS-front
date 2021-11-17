@@ -1,29 +1,131 @@
 .team {
   padding: 114px 0;
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 970px;
+      .team-row {
+        justify-content: space-around;
+        .team-card {
+          max-width: 40%;
+          text-align: center;
+          .avatar img {
+            margin: 0 auto 30px;
+          }
+          .person-link {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 720px;
+      .team-row {
+        justify-content: space-between;
+        .team-card {
+          max-width: 45%;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    padding-bottom: 60px;
+    .container {
+      max-width: 540px;
+      .team-row {
+        justify-content: center;
+        .team-card {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    padding-top: 80px;
+    .container {
+      max-width: 100%;
+    }
+    .team-card {
+      max-width: 70%;
+      @include flex;
+      justify-content: center;
+      .avatar {
+        margin-right: 15px;
+      }
+      .avatar img {
+        height: 170px;
+        width: 170px;
+      }
+      .person-wrap {
+        align-self: center;
+      }
+      .resume {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  @media (max-width: 402px) {
+    .container {
+      max-width: 100%;
+    }
+    .team-card {
+      max-width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .avatar {
+        margin-right: 0px;
+        & img {
+          height: 150px;
+          width: 150px;
+        }
+      }
+      .resume {
+        font-size: 1rem;
+      }
+      .person-link li {
+        margin: 0 15px
+      }
+    }
+  }
 }
 .team-row {
   @include flex;
+  margin: 0 -15px;
+  @media (min-width: 1201px) {
+    flex-wrap: nowrap;
+  }
 }
 .team-card {
   max-width: 270px;
+  margin: 0 15px;
+  padding-bottom: 30px;
   .avatar img {
     display: block;
     margin-bottom: 30px;
     box-shadow: 0 0 10px $black;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
   }
   .name {
-    @include font (24px,700,28px);
+    @include font(24px, 700, 28px);
+    font-family: 'Kaushan Script', cursive;
     color: $black;
     margin-bottom: 6px;
   }
   .position {
-    @include font (18px, 400, 21px);
+    @include font(14px, 400, 18px);
     color: $orange;
     text-transform: uppercase;
     margin-bottom: 18px;
   }
   .resume {
-    @include font (18px, 400, 21px);
+    @include font(18px, 400, 21px);
     color: $grey;
     margin-bottom: 38px;
   }
@@ -32,10 +134,24 @@
     justify-content: flex-start;
     li {
       font-size: 30px;
-      margin-right: 5px;
+      margin-right: 10px;
       color: $grey;
       opacity: 0.9;
+      .fa-facebook-square {
+        @include facebook;
+      }
+      .fa-twitter-square {
+        @include twitter;
+      }
+      .fa-linkedin {
+        @include linkedin;
+      }
+      .fab {
+        transition: 0.3s ease;
+      }
+      .fab:hover {
+        color: transparent;
+      }
     }
   }
 }
-

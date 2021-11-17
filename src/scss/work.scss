@@ -7,7 +7,7 @@
 .work-row {
   @include flex;
   justify-content: center;
-  @media (min-width: 1250px) {
+  @media (min-width: 1400px) {
     flex-wrap: nowrap;
   }
 }
@@ -67,12 +67,12 @@
   }
   @media (max-width: 468px) {
     &__title {
-      font-size: 0.9rem;
+      font-size: 1rem;
       line-height: 1.2rem;
       margin-bottom: 10px;
     }
     &__description {
-      font-size: 0rem;
+      font-size: 0.9rem;
       line-height: 1rem;
     }
   }

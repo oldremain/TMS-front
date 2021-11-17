@@ -66,3 +66,17 @@ $orange: #ff4343;
   align-items: center;
   transition: 0.4s ease;
 }
+
+// ----Hover effect для иконок социальных сетей-----
+@mixin facebook {
+    background: linear-gradient(27deg, rgba(49,129,238,1) 0%, rgba(0,99,255,1) 100%);
+    background-clip: text;
+  } 
+@mixin twitter {
+  background: linear-gradient(27deg, rgba(49,238,233,1) 0%, rgba(0,176,255,1) 100%);
+  background-clip: text;
+}
+@mixin linkedin {
+  background: linear-gradient(90deg, rgba(13,89,227,1) 42%, rgba(13,97,238,1) 100%);
+  background-clip: text;
+}

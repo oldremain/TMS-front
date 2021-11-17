@@ -80,11 +80,12 @@
     flex: 1 1 40%;
   }
   @media (max-width: 468px) {
+    margin-bottom: 50px;
     .features-card__title {
       font-size: 1.2rem;
     }
     .features-card__text {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
 }
