@@ -1,0 +1,57 @@
+.download {
+  padding: 114px 0;
+  .container {
+    text-align: center;
+  }
+}
+.download-title {
+  @include font(30px, 500, 35px);
+  color: $black;
+  margin-bottom: 25px;
+}
+.download-subtitle {
+  @include font(18px, 700, 21px);
+  text-transform: uppercase;
+  color: $black;
+  margin-bottom: 48px;
+}
+.download-link {
+  max-width: 370px;
+  margin: auto;
+  text-align: center;
+  background-color: $orange;
+  border-radius: 25px;
+  transition: 0.4s ease;
+ /*  &:hover > a {
+    color: $orange;
+  }
+  &:hover {
+    background-color: $white;
+  } */
+  a {
+    @include font(1.5rem, 900, 1.75rem);
+    color: $white;
+    text-transform: uppercase;
+    line-height: 80px;
+    transition: 0.4s ease;
+  }
+  @media (max-width: 767px) {
+    max-width: 300px;
+    & a {
+      line-height: 70px;
+    }
+  }
+  @media (max-width: 767px) {
+    max-width: 300px;
+    & a {
+      line-height: 70px;
+    }
+  }
+  @media (max-width: 360px) {
+    max-width: 280px;
+    & a {
+      line-height: 60px;
+      font-size: 1.3rem;
+    }
+  }
+}
