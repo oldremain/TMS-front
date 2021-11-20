@@ -26,7 +26,7 @@
         justify-content: space-between;
         align-items: center;
         .features-card {
-          width: 70%;
+          width: 90%;
           margin-right: 0;
         }
       }
@@ -34,6 +34,9 @@
   }
   @media (max-width: 468px) {
     padding: 70px 0;
+    /* .features-card {
+      max-width: 90%;
+    } */
     .features-card:last-child {
       margin-bottom: 0;
     }

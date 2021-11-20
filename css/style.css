@@ -344,13 +344,16 @@ a:hover {
             align-items: center;
   }
   .features .container .features-row .features-card {
-    width: 70%;
+    width: 90%;
     margin-right: 0;
   }
 }
 @media (max-width: 468px) {
   .features {
     padding: 70px 0;
+    /* .features-card {
+      max-width: 90%;
+    } */
   }
   .features .features-card:last-child {
     margin-bottom: 0;
@@ -474,8 +477,8 @@ a:hover {
      object-fit: cover;
   width: 100%;
   height: 100%;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 @media (min-width: 1024px) {
   .work-card {
@@ -588,8 +591,8 @@ a:hover {
 }
 
 .work-card:hover > .card-img img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .team {
@@ -1155,7 +1158,7 @@ a:hover {
 
 .footer-section {
   padding: 71px 0 67px;
-  background-color: #353C65;
+  background-color: #353c65;
   color: #dfdfdf;
 }
 
@@ -1170,7 +1173,6 @@ a:hover {
       flex-wrap: wrap;
   margin: 0 -15px;
 }
-
 .footer-row__item {
   max-width: 370px;
   margin: 0 15px;
@@ -1215,15 +1217,103 @@ a:hover {
 .footer-row__item .footer-links-list li:last-child {
   margin-right: 0px;
 }
+.footer-row__item .footer-links-list li .fa-facebook-square {
+  background: linear-gradient(27deg, #3181ee 0%, #0063ff 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.footer-row__item .footer-links-list li .fa-twitter-square {
+  background: linear-gradient(27deg, #31eee9 0%, #00b0ff 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.footer-row__item .footer-links-list li .fa-linkedin {
+  background: -webkit-gradient(linear, left top, right top, color-stop(42%, #0d59e3), to(#0d61ee));
+  background: linear-gradient(90deg, #0d59e3 42%, #0d61ee 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.footer-row__item .footer-links-list li .fab {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.footer-row__item .footer-links-list li .fab:hover {
+  color: transparent;
+}
+
+@media (max-width: 1200px) {
+  .footer-section .container {
+    max-width: 960px;
+  }
+  .footer-section .container .footer-row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+@media (max-width: 992px) {
+  .footer-section .container {
+    max-width: 720px;
+  }
+  .footer-section .container .footer-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .footer-section .container {
+    max-width: 540px;
+  }
+  .footer-section .container .footer-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-section .container .footer-row .footer-row__item {
+    max-width: 90%;
+    margin-bottom: 40px;
+  }
+  .footer-section .container .footer-row .footer-row__item:last-child {
+    margin-bottom: 0px;
+  }
+  .footer-section .container .footer-row .footer-row__item .title {
+    text-decoration: underline;
+  }
+  .footer-section .container .footer-row .footer-row__item .description {
+    font-size: 17px;
+  }
+  .footer-section .container .footer-row .footer-row__item .footer-links-list {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .footer-section .container {
+    max-width: 90%;
+  }
+  .footer-section .container .footer-row .footer-row__item {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+  }
+  .footer-section .container .footer-row .footer-row__item .title {
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  .footer-section .container .footer-row .footer-row__item .description {
+    font-size: 16px;
+  }
+}
 
 .footer {
   padding: 24px 0;
-  background-color: #2C3154;
+  background-color: #2c3154;
 }
 
 .footer-row-bottom {
   padding-top: 24px;
-  background-color: #353C65;
+  background-color: #353c65;
 }
 
 .copyright {
@@ -1241,6 +1331,16 @@ a:hover {
 }
 .copyright p span {
   color: #dfdfdf;
+}
+@media (max-width: 576px) {
+  .copyright p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 350px) {
+  .copyright p {
+    font-size: 15px;
+  }
 }
 
 html {
