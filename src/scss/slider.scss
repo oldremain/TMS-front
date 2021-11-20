@@ -27,6 +27,9 @@
 .slider {
   position: relative;
   padding: 0px 60px;
+  @media (max-width: 576px) {
+    padding: 0 15px;
+  }
 }
 .slider .slick-arrow {
   position: absolute;
@@ -77,19 +80,30 @@
   .slider-text {
     display: flex;
     text-align: left;
+    padding: 20px;
     width: 50%;
-    background: linear-gradient(40deg, rgba(105,30,78,1) 0%, rgba(110,35,76,1) 100%);
+    background: linear-gradient(
+      40deg,
+      rgba(105, 30, 78, 1) 0%,
+      rgba(110, 35, 76, 1) 100%
+    );
     .slider-text-wrap {
       margin: auto;
       max-width: 470px;
     }
   }
 }
+
+// Добавляем цвет бэкграунду для четных слайдов
 .slider__item:nth-child(even) > .slider-text {
-  background: linear-gradient(40deg, rgba(53,60,101,1) 0%, rgba(54,59,110,1) 100%);
+  background: linear-gradient(
+    40deg,
+    rgba(53, 60, 101, 1) 0%,
+    rgba(54, 59, 110, 1) 100%
+  );
 }
 .slider-text-wrap p {
-  @include font (36px,400,49px);
+  @include font(36px, 400, 49px);
   font-family: 'Cardo', serif;
   font-style: italic;
   color: rgb(223, 223, 223);
@@ -97,4 +111,95 @@
     @include font(13px, 700, 15px);
     color: rgb(223, 223, 223);
   }
+}
+
+// ------Медиа запросы-----
+.slider-text-wrap {
+  @media (max-width: 1200px) {
+    p {
+      font-size: 25px;
+      line-height: 31px;
+      span {
+        font-size: 11px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    max-width: 100%;
+    p {
+      font-size: 23px;
+      line-height: 28px;
+      span {
+        font-size: 11px;
+      }
+    }
+  }
+}
+.slick-track {
+  @media (max-width: 768px) {
+    height: 100%;
+  }
+}
+.slick-arrow {
+  @media (max-width: 768px) {
+    display: none !important;
+  }
+}
+.slider__item {
+  @media (max-width: 768px) {
+    .slider-img {
+      width: 70%;
+    }
+    .slider-text {
+      width: 30%;
+      .slider-text-wrap p:first-child {
+        display: none;
+      }
+      p {
+        font-size: 15px;
+        line-height: 16px;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    width: 100vw;
+    .slider-img {
+      width: 100%;
+    }
+    .slider-text {
+      display: none;
+    }
+  }
+}
+
+//----slider Dots-----
+.slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  @media (max-width: 576px) {
+    margin-top: 0px;
+  }
+}
+.slider .slick-dots li {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: burlywood;
+}
+// Эффекты для активнойй кнопки
+.slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid burlywood;
+  box-shadow: 2px 2px 17px -1px rgba(202, 83, 206, 0.75);
+  transform: translateY(2px);
+  transition: transform 0.5s ease, background-color 0.3s ease;
 }
