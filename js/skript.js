@@ -11,7 +11,7 @@ $(document).ready(function () {
         breakpoint: 768,
         settings: {
           autoplay: true,
-          autoplaySpeed: 1500,
+          autoplaySpeed: 3000,
           infinite: true,
         },
       },
@@ -19,7 +19,7 @@ $(document).ready(function () {
         breakpoint: 576,
         settings: {
           autoplay: true,
-          autoplaySpeed: 1500,
+          autoplaySpeed: 3000,
           infinite: true,
         },
       },
