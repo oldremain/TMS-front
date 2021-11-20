@@ -860,6 +860,11 @@ a:hover {
   position: relative;
   padding: 0px 60px;
 }
+@media (max-width: 768px) {
+  .slider {
+    padding: 0 40px;
+  }
+}
 @media (max-width: 576px) {
   .slider {
     padding: 0 15px;

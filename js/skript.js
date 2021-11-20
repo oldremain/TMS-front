@@ -8,13 +8,21 @@ $(document).ready(function () {
     waitForAnimate: false,
     responsive: [
       {
-        breakpoint: 576,
+        breakpoint: 768,
         settings: {
-          autoplay:true,
+          autoplay: true,
           autoplaySpeed: 1500,
           infinite: true,
-        }
-      }
-    ]
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          autoplay: true,
+          autoplaySpeed: 1500,
+          infinite: true,
+        },
+      },
+    ],
   });
 });
