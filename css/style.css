@@ -134,6 +134,7 @@ a:hover {
   font-style: normal;
   font-weight: 700;
   line-height: 15px;
+  /* letter-spacing: 2px; */
   color: #fff;
   text-transform: uppercase;
   position: relative;
@@ -1115,6 +1116,7 @@ a:hover {
   text-align: center;
   background-color: #ff4343;
   border-radius: 25px;
+  cursor: pointer;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
@@ -1154,6 +1156,82 @@ a:hover {
     line-height: 60px;
     font-size: 1.3rem;
   }
+}
+
+.download-link {
+  position: relative;
+}
+
+.download-link::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  display: block;
+  top: 115%;
+  right: 4%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.download-link:hover::after {
+  -webkit-animation: downl 1s linear 1 forwards;
+          animation: downl 1s linear 1 forwards;
+}
+
+@-webkit-keyframes downl {
+  0% {
+    top: 115%;
+  }
+  20% {
+    top: 30%;
+  }
+  40% {
+    top: 50%;
+  }
+  60% {
+    top: 40%;
+  }
+  70% {
+    top: 50%;
+  }
+  85% {
+    top: 45%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes downl {
+  0% {
+    top: 115%;
+  }
+  20% {
+    top: 30%;
+  }
+  40% {
+    top: 50%;
+  }
+  60% {
+    top: 40%;
+  }
+  70% {
+    top: 50%;
+  }
+  85% {
+    top: 45%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+.download-link:hover {
+  background-color: #f82424;
 }
 
 .footer-section {

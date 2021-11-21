@@ -55,6 +55,7 @@
     display: inline-block;
     margin-left: 77px;
     @include font(13px, 700, 15px);
+    /* letter-spacing: 2px; */
     color: $white;
     text-transform: uppercase;
     position: relative;
