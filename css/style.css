@@ -1343,6 +1343,33 @@ a:hover {
   }
 }
 
+a.back-to-top {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+a.back-to-top i {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 30px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+a.back-to-top:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+a.back-to-top:hover > i {
+  color: #beb7b7;
+}
+
 html {
   font-family: "Cardo", serif;
   font-family: "Kaushan Script", cursive;

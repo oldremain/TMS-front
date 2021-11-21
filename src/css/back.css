@@ -1,0 +1,23 @@
+a.back-to-top {
+  display: none;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  /* text-indent: -9999px; */
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: no-repeat center 43%;
+  border-radius: 30px;
+}
+a.back-to-top i {
+  color: purple;
+  font-size: 30px;
+}
+
+a:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
