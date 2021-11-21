@@ -1115,10 +1115,11 @@ a:hover {
   margin: auto;
   text-align: center;
   background-color: #ff4343;
+  /* background: linear-gradient(15deg, rgba(70,61,110,1) 0%, rgba(170,10,167,1) 100%); */
   border-radius: 25px;
   cursor: pointer;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 .download-link a {
   font-family: "Raleway", sans-serif;
@@ -1129,8 +1130,6 @@ a:hover {
   color: #fff;
   text-transform: uppercase;
   line-height: 80px;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
 }
 @media (max-width: 767px) {
   .download-link {
@@ -1162,51 +1161,21 @@ a:hover {
   position: relative;
 }
 
-.download-link::after {
-  content: "";
-  font-family: "Font Awesome 5 Free";
+/* .download-link::after {
+  content: '\f381';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 600;
-  font-size: 25px;
+  font-size: 15px;
   color: white;
   position: absolute;
   display: block;
   top: 115%;
   right: 4%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  transform: translate(-50%, -50%);
+} */
+/* .download-link:hover::after {
+  animation: downl 1s linear 1 forwards;
 }
-
-.download-link:hover::after {
-  -webkit-animation: downl 1s linear 1 forwards;
-          animation: downl 1s linear 1 forwards;
-}
-
-@-webkit-keyframes downl {
-  0% {
-    top: 115%;
-  }
-  20% {
-    top: 30%;
-  }
-  40% {
-    top: 50%;
-  }
-  60% {
-    top: 40%;
-  }
-  70% {
-    top: 50%;
-  }
-  85% {
-    top: 45%;
-  }
-  100% {
-    top: 50%;
-  }
-}
-
 @keyframes downl {
   0% {
     top: 115%;
@@ -1229,11 +1198,36 @@ a:hover {
   100% {
     top: 50%;
   }
-}
+} */
 .download-link:hover {
   background-color: #f82424;
+  -webkit-animation: letter 1s ease;
+          animation: letter 1s ease;
 }
 
+@-webkit-keyframes letter {
+  0% {
+    letter-spacing: 0px;
+  }
+  50% {
+    letter-spacing: 0.3em;
+  }
+  100% {
+    letter-spacing: 0px;
+  }
+}
+
+@keyframes letter {
+  0% {
+    letter-spacing: 0px;
+  }
+  50% {
+    letter-spacing: 0.3em;
+  }
+  100% {
+    letter-spacing: 0px;
+  }
+}
 .footer-section {
   padding: 71px 0 67px;
   background-color: #353c65;
