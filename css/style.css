@@ -1157,48 +1157,6 @@ a:hover {
   }
 }
 
-.download-link {
-  position: relative;
-}
-
-/* .download-link::after {
-  content: '\f381';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 600;
-  font-size: 15px;
-  color: white;
-  position: absolute;
-  display: block;
-  top: 115%;
-  right: 4%;
-  transform: translate(-50%, -50%);
-} */
-/* .download-link:hover::after {
-  animation: downl 1s linear 1 forwards;
-}
-@keyframes downl {
-  0% {
-    top: 115%;
-  }
-  20% {
-    top: 30%;
-  }
-  40% {
-    top: 50%;
-  }
-  60% {
-    top: 40%;
-  }
-  70% {
-    top: 50%;
-  }
-  85% {
-    top: 45%;
-  }
-  100% {
-    top: 50%;
-  }
-} */
 .download-link:hover {
   background-color: #f82424;
   -webkit-animation: letter 1s ease;
