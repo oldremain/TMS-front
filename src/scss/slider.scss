@@ -51,10 +51,10 @@
 .slider .slick-arrow.slick-prev::before {
   content: '\f100';
   font-family: 'Font Awesome 5 Free';
-  font-size: 40px;
+  font-size: 33px;
   font-weight: 600;
   display: inline-block;
-  color: $black;
+  color: rgb(76, 69, 69);
 }
 .slider .slick-arrow.slick-next {
   right: 0;
@@ -62,10 +62,10 @@
 .slider .slick-arrow.slick-next::after {
   content: '\f101';
   font-family: 'Font Awesome 5 Free';
-  font-size: 40px;
+  font-size: 33px;
   font-weight: 600;
   display: inline-block;
-  color: $black;
+  color: rgb(76, 69, 69);
   right: 0;
 }
 

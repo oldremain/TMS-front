@@ -8,11 +8,15 @@
 .footer-row {
   @include flex;
   margin: 0 -15px;
-  @media (max-width: 1200px) {
+  @media (min-width:992px) {
+    .footer-row__item {
+      width: 30%;
+    }
   }
 }
 .footer-row__item {
   max-width: 370px;
+  /* width: 30%; */
   margin: 0 15px;
   .title {
     @include font(18px, 700, 21px);

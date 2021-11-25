@@ -898,10 +898,10 @@ a:hover {
 .slider .slick-arrow.slick-prev::before {
   content: "";
   font-family: "Font Awesome 5 Free";
-  font-size: 40px;
+  font-size: 33px;
   font-weight: 600;
   display: inline-block;
-  color: #2d3033;
+  color: #4c4545;
 }
 
 .slider .slick-arrow.slick-next {
@@ -911,10 +911,10 @@ a:hover {
 .slider .slick-arrow.slick-next::after {
   content: "";
   font-family: "Font Awesome 5 Free";
-  font-size: 40px;
+  font-size: 33px;
   font-weight: 600;
   display: inline-block;
-  color: #2d3033;
+  color: #4c4545;
   right: 0;
 }
 
@@ -1207,8 +1207,15 @@ a:hover {
       flex-wrap: wrap;
   margin: 0 -15px;
 }
+@media (min-width: 992px) {
+  .footer-row .footer-row__item {
+    width: 30%;
+  }
+}
+
 .footer-row__item {
   max-width: 370px;
+  /* width: 30%; */
   margin: 0 15px;
 }
 .footer-row__item .title {
