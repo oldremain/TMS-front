@@ -26,16 +26,17 @@
   }
 }
 .header-logo {
-  @include font(2.25rem, 700, 1.31rem);
+  @include font(2.25rem, 700, 2.3rem);
   text-transform: uppercase;
   color: rgb(101, 105, 128);
   transition: 0.3s ease;
   &:after {
     content: 'BOX';
     display: inline-block;
-    @include font(2.25rem, 400, 1.31rem);
+    @include font(2.4rem, 400, 2.41rem);
     text-transform: uppercase;
     color: $white;
+    letter-spacing: -1px;
     margin-left: -5px;
     transition: 0.3s ease;
   }
@@ -55,7 +56,6 @@
     display: inline-block;
     margin-left: 77px;
     @include font(13px, 700, 15px);
-    /* letter-spacing: 2px; */
     color: $white;
     text-transform: uppercase;
     position: relative;
@@ -151,7 +151,8 @@
 .burger--none {
   display: none;
   @media (max-width: 767px) {
-    display: block;
+    display: flex;
+    align-items: center;
     margin-top: -5px;
   }
 }

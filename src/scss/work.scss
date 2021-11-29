@@ -8,14 +8,19 @@
   @include flex;
   justify-content: center;
   @media (min-width: 1600px) {
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+    .work-card {
+      max-height: 360px;
+    }
   }
 }
 .work-card {
   border: 1px solid $white;
   position: relative;
+  max-height: 340px;
   .card-img {
     overflow: hidden;
+    height: 100%;
     img {
       display: block;
       object-fit: cover;
@@ -48,6 +53,7 @@
 }
 .card-content {
   @include card-mask;
+  cursor: pointer;
   &__title {
     @include font(1.5rem, 900, 1.75rem);
     text-transform: uppercase;

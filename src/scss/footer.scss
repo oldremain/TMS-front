@@ -8,7 +8,7 @@
 .footer-row {
   @include flex;
   margin: 0 -15px;
-  @media (min-width:992px) {
+  @media (min-width: 992px) {
     .footer-row__item {
       width: 30%;
     }
@@ -107,7 +107,7 @@
       .footer-row {
         .footer-row__item {
           border-bottom: 1px solid $white;
-          padding-bottom: 5px;
+          padding-bottom: 15px;
           .title {
             margin-bottom: 10px;
             text-decoration: none;
